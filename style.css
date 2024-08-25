@@ -1,0 +1,606 @@
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: #FDEDEC; /* Rosa muito claro */
+}
+
+header {
+    background-color: #e5989b; /* Rosa suave */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #FFD6D9; /* Rosa claro */
+}
+
+main {
+    display: flex;
+    flex-direction: column; /* Para que o conteúdo se empilhe verticalmente */
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Faz o main ocupar toda a altura da tela inicial */
+    text-align: center;
+    background-color: #fdedec; /* Fundo suave */
+    padding: 20px;
+    background-image: url('img/fundo.png'); /* Imagem de fundo */
+    background-size: cover; /* Cobre todo o fundo */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+}
+
+.highlight-message {
+    background-color: #FFF1F3; /* Fundo suave para a mensagem */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Limita a largura para uma boa legibilidade */
+    margin-bottom: 40px; /* Espaço abaixo da mensagem */
+}
+
+
+
+
+.ofertas-section {
+    background-color: #fdedec; /* Fundo suave */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.ofertas-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.oferta-card {
+    background-color: #fff8f8; /* Fundo suave para o card */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px; /* Largura do card */
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box; /* Garante que padding e bordas não afetam a largura total */
+    display: flex; /* Usado para garantir o alinhamento dos elementos */
+    flex-direction: column; /* Alinha os elementos verticalmente */
+    justify-content: space-between; /* Espaça os elementos verticalmente */
+}
+
+.oferta-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #E5989B; /* Linha abaixo da imagem */
+}
+
+.oferta-card h3 {
+    color: #E5989B;
+    font-size: 24px;
+    margin: 15px 0;
+}
+
+.oferta-card p {
+    color: #6D6875;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.preço {
+    font-size: 20px;
+    font-weight: bold;
+    color: #E5989B;
+    margin: 10px 0;
+}
+
+.cta-button {
+    background-color: #E5989B;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: 20px; /* Espaço adicional acima do botão */
+    align-self: center; /* Alinha o botão ao centro do card */
+    display: inline-block; /* Garante que o botão respeite o espaçamento */
+}
+
+.cta-button:hover {
+    background-color: #FFD6D9; /* Rosa claro no hover */
+}
+
+
+.como-fazer-section {
+    background-color: #FFF8F8; /* Fundo suave para a seção de receitas */
+    padding: 40px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1200px; /* Limita a largura máxima da seção */
+    margin: 40px auto; /* Espaço acima e abaixo da seção de receitas */
+}
+
+.como-fazer-section h2 {
+    font-family: 'Pacifico', cursive;
+    color: #E5989B;
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center; /* Centraliza o título */
+}
+
+.receita-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.receita-card {
+    background-color: #FFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.receita-card h3 {
+    font-family: 'Pacifico', cursive;
+    color: #E5989B;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.receita-card p {
+    color: #6D6875;
+    font-size: 18px;
+    margin-bottom: 20px; /* Espaço abaixo do parágrafo */
+}
+
+.receita-card .cta-button {
+    background-color: #E5989B;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: 20px; /* Espaço acima do botão */
+    display: inline-block; /* Garante que o botão esteja alinhado corretamente */
+}
+
+.receita-card .cta-button:hover {
+    background-color: #FFD6D9; /* Rosa claro no hover */
+}
+
+.receita-card:hover {
+    transform: scale(1.05); /* Leve aumento no tamanho do card ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta a sombra ao passar o mouse */
+}
+
+
+
+/* Estilos gerais para o site */
+h1 {
+    font-family: 'Pacifico', cursive;
+    color: #E5989B;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #6D6875; /* Tom suave para o texto */
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #E5989B; /* Rosa suave */
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #FFD6D9; /* Rosa claro no hover */
+}
+
+/* Estilos específicos para a seção de tortas */
+.tortas-section {
+    background-color: #fff8f8; /* Fundo suave para a seção de tortas */
+    padding: 40px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1200px; /* Limita a largura máxima da seção */
+    margin: 40px auto; /* Espaço acima e abaixo da seção de tortas */
+}
+
+.tortas-section h2 {
+    font-family: 'Pacifico', cursive;
+    color: #E5989B;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.tortas-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.torta-card {
+    background-color: #FFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Adiciona transição para efeitos de hover */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinha o conteúdo ao centro */
+    justify-content: space-between; /* Garante que o botão fique na parte inferior do card */
+}
+
+.torta-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px; /* Espaço abaixo da imagem */
+}
+
+.torta-card h3 {
+    font-family: 'Pacifico', cursive;
+    color: #E5989B;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.torta-card p {
+    color: #6D6875;
+    font-size: 18px;
+}
+
+.torta-card .preço {
+    font-size: 20px;
+    font-weight: bold;
+    color: #E5989B;
+    margin: 10px 0;
+}
+
+.torta-card .cta-button {
+    background-color: #E5989B;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    align-self: center; /* Garante que o botão fique centralizado no card */
+    margin-top: 20px; /* Espaço acima do botão */
+}
+
+.torta-card .cta-button:hover {
+    background-color: #FFD6D9; /* Rosa claro no hover */
+}
+
+.torta-card:hover {
+    transform: scale(1.05); /* Leve aumento no tamanho do card ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta a sombra ao passar o mouse */
+}
+
+
+
+.contato-section {
+    background-color: #FFF8F8; /* Fundo suave para a seção de contato */
+    padding: 40px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1200px; /* Limita a largura máxima da seção */
+    margin: 40px auto; /* Espaço acima e abaixo da seção de contato */
+}
+
+.contato-section h2 {
+    font-family: 'Pacifico', cursive;
+    color: #E5989B;
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center; /* Centraliza o título */
+}
+
+.contato-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Espaço entre informações de contato e redes sociais */
+}
+
+.contato-info {
+    background-color: #FFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.contato-info h3 {
+    font-family: 'Pacifico', cursive;
+    color: #E5989B;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.contato-info p {
+    font-size: 18px;
+    color: #6D6875;
+    margin-bottom: 10px; /* Espaço entre as informações */
+}
+
+.redes-sociais {
+    text-align: center; /* Centraliza o título das redes sociais */
+}
+
+.redes-sociais h3 {
+    font-family: 'Pacifico', cursive;
+    color: #E5989B;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Espaço entre os ícones */
+}
+
+.social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.social-icon img {
+    width: 100%;
+    height: auto;
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Leve aumento no tamanho do ícone ao passar o mouse */
+}
+
+
+
+footer {
+    background-color: #E5989B; /* Rosa suave */
+    color: #FFF;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-info, .footer-links, .footer-contact {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.footer-info h3, .footer-links h3, .footer-contact h3 {
+    font-family: 'Pacifico', cursive;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-info p, .footer-links ul, .footer-contact p {
+    font-size: 16px;
+    color: #FFF;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #FFF;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #FFD6D9; /* Rosa claro no hover */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #FFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos responsivos */
+
+@media (max-width: 1200px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-info, .footer-links, .footer-contact {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        width: 100%; /* Garante que a navegação ocupe toda a largura da tela */
+    }
+
+    nav a {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .oferta-card, .receita-card, .torta-card {
+        width: 100%;
+        max-width: 500px; /* Ajusta o tamanho máximo dos cards */
+        box-sizing: border-box; /* Garante que o padding não afete a largura */
+    }
+
+    .como-fazer-section, .tortas-section, .contato-section {
+        padding: 20px;
+        width: calc(100% - 40px); /* Ajusta a largura para evitar overflow */
+        box-sizing: border-box; /* Garante que padding e bordas não afetem a largura total */
+    }
+
+    .como-fazer-section h2, .tortas-section h2, .contato-section h2 {
+        font-size: 28px;
+    }
+
+    .preço, .cta-button {
+        font-size: 18px;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    nav {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    nav a {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .highlight-message {
+        padding: 20px;
+        width: calc(100% - 40px); /* Ajusta a largura para evitar overflow */
+        box-sizing: border-box; /* Garante que padding e bordas não afetem a largura total */
+    }
+
+    .ofertas-section, .como-fazer-section, .tortas-section, .contato-section {
+        padding: 20px;
+        width: calc(100% - 40px); /* Ajusta a largura para evitar overflow */
+        box-sizing: border-box; /* Garante que padding e bordas não afetem a largura total */
+    }
+
+    .footer-info, .footer-links, .footer-contact {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .social-icons {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .social-icon {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .cta-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .highlight-message, .ofertas-section, .como-fazer-section, .tortas-section, .contato-section {
+        padding: 10px;
+        width: calc(100% - 20px); /* Ajusta a largura para evitar overflow */
+        box-sizing: border-box; /* Garante que padding e bordas não afetem a largura total */
+    }
+
+    .preço {
+        font-size: 16px;
+    }
+
+    .footer-info h3, .footer-links h3, .footer-contact h3 {
+        font-size: 20px;
+    }
+
+    .footer-info p, .footer-links ul, .footer-contact p {
+        font-size: 14px;
+    }
+}
