@@ -1,0 +1,25 @@
+Cantinho das Tortas
+
+Paleta de Cores:
+Tons pastéis:
+
+Rosa suave (#FADADD): Transmite delicadeza e aconchego.
+Bege claro (#F5E6CC): Um tom neutro e elegante, que remete a algo caseiro.
+Verde menta (#A8E6CF): Refrescante e moderno, sem perder a suavidade.
+Marrom claro (#D8B4A0): Traz uma conexão com as tortas, remetendo à crosta e à doçura.
+Cores complementares:
+
+Rosa escuro (#D08159): Para detalhes e botões de destaque.
+Verde escuro (#556B2F): Para contraste em textos ou elementos gráficos.
+
+Fontes:
+Cursive/Script Fonts: Para o nome e títulos.
+
+Pacifico: Uma fonte cursiva que dá um toque amigável e caseiro.
+Dancing Script: Elegante e fluida, ideal para transmitir charme.
+Great Vibes: Clássica e sofisticada, perfeita para o nome da loja.
+Sans-Serif Fonts: Para o corpo do texto, garantindo boa legibilidade.
+
+Montserrat: Limpa e moderna, fácil de ler em qualquer tamanho.
+Lato: Versátil e equilibrada, combina bem com fontes mais decorativas.
+Poppins: Redonda e suave, adiciona um toque de modernidade.
