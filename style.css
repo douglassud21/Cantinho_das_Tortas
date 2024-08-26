@@ -58,9 +58,6 @@ main {
     margin-bottom: 40px; /* Espaço abaixo da mensagem */
 }
 
-
-
-
 .ofertas-section {
     background-color: #fdedec; /* Fundo suave */
     padding: 40px 20px;
@@ -200,8 +197,6 @@ main {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta a sombra ao passar o mouse */
 }
 
-
-
 /* Estilos gerais para o site */
 h1 {
     font-family: 'Pacifico', cursive;
@@ -315,8 +310,6 @@ p {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta a sombra ao passar o mouse */
 }
 
-
-
 .contato-section {
     background-color: #FFF8F8; /* Fundo suave para a seção de contato */
     padding: 40px 20px;
@@ -397,8 +390,6 @@ p {
     transform: scale(1.1); /* Leve aumento no tamanho do ícone ao passar o mouse */
 }
 
-
-
 footer {
     background-color: #E5989B; /* Rosa suave */
     color: #FFF;
@@ -458,19 +449,6 @@ footer {
     font-size: 14px;
     color: #FFF;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Estilos responsivos */
 
