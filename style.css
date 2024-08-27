@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: 'Lato', sans-serif;
@@ -450,135 +454,20 @@ footer {
     color: #FFF;
 }
 
-/* Estilos responsivos */
-
-@media (max-width: 1200px) {
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-info, .footer-links, .footer-contact {
-        max-width: 100%;
-        margin-bottom: 20px;
-    }
+/* Barra de rolagem personalizada para Webkit */
+::-webkit-scrollbar {
+    width: 12px; /* Largura da barra de rolagem */
 }
 
-@media (max-width: 992px) {
-    nav {
-        flex-direction: column;
-        align-items: center;
-        width: 100%; /* Garante que a navegação ocupe toda a largura da tela */
-    }
-
-    nav a {
-        font-size: 16px;
-        margin-bottom: 10px;
-    }
-
-    .oferta-card, .receita-card, .torta-card {
-        width: 100%;
-        max-width: 500px; /* Ajusta o tamanho máximo dos cards */
-        box-sizing: border-box; /* Garante que o padding não afete a largura */
-    }
-
-    .como-fazer-section, .tortas-section, .contato-section {
-        padding: 20px;
-        width: calc(100% - 40px); /* Ajusta a largura para evitar overflow */
-        box-sizing: border-box; /* Garante que padding e bordas não afetem a largura total */
-    }
-
-    .como-fazer-section h2, .tortas-section h2, .contato-section h2 {
-        font-size: 28px;
-    }
-
-    .preço, .cta-button {
-        font-size: 18px;
-    }
-
-    .cta-button {
-        padding: 10px 20px;
-    }
+::-webkit-scrollbar-track {
+    background: #FFD6D9; /* Cor do trilho da barra de rolagem */
 }
 
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .logo {
-        margin-bottom: 10px;
-        font-size: 20px;
-    }
-
-    nav {
-        margin-top: 10px;
-        width: 100%;
-    }
-
-    nav a {
-        font-size: 14px;
-        margin-bottom: 10px;
-    }
-
-    .highlight-message {
-        padding: 20px;
-        width: calc(100% - 40px); /* Ajusta a largura para evitar overflow */
-        box-sizing: border-box; /* Garante que padding e bordas não afetem a largura total */
-    }
-
-    .ofertas-section, .como-fazer-section, .tortas-section, .contato-section {
-        padding: 20px;
-        width: calc(100% - 40px); /* Ajusta a largura para evitar overflow */
-        box-sizing: border-box; /* Garante que padding e bordas não afetem a largura total */
-    }
-
-    .footer-info, .footer-links, .footer-contact {
-        max-width: 100%;
-        text-align: center;
-    }
-
-    .social-icons {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .social-icon {
-        width: 30px;
-        height: 30px;
-    }
+::-webkit-scrollbar-thumb {
+    background: #e5989b; /* Cor do polegar da barra de rolagem */
+    border-radius: 2px; /* Cantos arredondados do polegar */
 }
 
-@media (max-width: 576px) {
-    .cta-button {
-        font-size: 14px;
-        padding: 8px 16px;
-    }
-
-    .logo {
-        font-size: 18px;
-    }
-
-    nav a {
-        font-size: 14px;
-    }
-
-    .highlight-message, .ofertas-section, .como-fazer-section, .tortas-section, .contato-section {
-        padding: 10px;
-        width: calc(100% - 20px); /* Ajusta a largura para evitar overflow */
-        box-sizing: border-box; /* Garante que padding e bordas não afetem a largura total */
-    }
-
-    .preço {
-        font-size: 16px;
-    }
-
-    .footer-info h3, .footer-links h3, .footer-contact h3 {
-        font-size: 20px;
-    }
-
-    .footer-info p, .footer-links ul, .footer-contact p {
-        font-size: 14px;
-    }
+::-webkit-scrollbar-thumb:hover {
+    background: #f1a5a8; /* Cor do polegar ao passar o mouse */
 }
